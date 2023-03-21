@@ -1,0 +1,178 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "2:7858000002332696468",
+      "lastPropertyId": "5:8713708801141357832",
+      "name": "Client",
+      "properties": [
+        {
+          "id": "1:5929301492391423601",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7462075976197345642",
+          "name": "displayName",
+          "type": 9
+        },
+        {
+          "id": "3:4704352412841395173",
+          "name": "phoneNumber",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "1:7058097791555081263"
+        },
+        {
+          "id": "4:5944446533857376676",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "5:8713708801141357832",
+          "name": "photo",
+          "type": 23
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5986989267032981236",
+      "lastPropertyId": "7:5010579150738566980",
+      "name": "Event",
+      "properties": [
+        {
+          "id": "1:552024388860596863",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:978845601943891946",
+          "name": "startTime",
+          "type": 10
+        },
+        {
+          "id": "3:8492841146878164181",
+          "name": "endTime",
+          "type": 10
+        },
+        {
+          "id": "4:1974889304505305180",
+          "name": "clientId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:8479733603081046725",
+          "relationTarget": "Client"
+        },
+        {
+          "id": "5:7465947421009140914",
+          "name": "cost",
+          "type": 6
+        },
+        {
+          "id": "7:5010579150738566980",
+          "name": "serviceId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "5:1218152188618020143",
+          "relationTarget": "Service"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:2349529481251455066",
+      "lastPropertyId": "6:4635353596580364256",
+      "name": "Service",
+      "properties": [
+        {
+          "id": "1:7694650519314026232",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:513786454057094554",
+          "name": "displayName",
+          "type": 9
+        },
+        {
+          "id": "3:1705023455806929211",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:5430593442897697857",
+          "name": "estimatedDuration",
+          "type": 6
+        },
+        {
+          "id": "5:2614327810556541974",
+          "name": "estimatedCost",
+          "type": 6
+        },
+        {
+          "id": "6:4635353596580364256",
+          "name": "groupId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:2114908763062324416",
+          "relationTarget": "ServiceGroup"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:8519039065006200059",
+      "lastPropertyId": "3:3504474936364026234",
+      "name": "ServiceGroup",
+      "properties": [
+        {
+          "id": "1:3543549027683507018",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4931024184957992925",
+          "name": "color",
+          "type": 6
+        },
+        {
+          "id": "3:3504474936364026234",
+          "name": "displayName",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "6:8519039065006200059",
+  "lastIndexId": "5:1218152188618020143",
+  "lastRelationId": "3:3805822948179382408",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    690219955158701390,
+    8336667537215309158
+  ],
+  "retiredIndexUids": [
+    3186782043160850315
+  ],
+  "retiredPropertyUids": [
+    1678877411499546538,
+    5112320231776418031,
+    5117668165051323989,
+    5600567590177575493,
+    4865501842123126049
+  ],
+  "retiredRelationUids": [
+    3805822948179382408
+  ],
+  "version": 1
+}
